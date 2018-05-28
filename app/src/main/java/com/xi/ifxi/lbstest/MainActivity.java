@@ -125,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
                 currentPosition.append("网络");
             }
 
+            Log.i("MainActivity", currentPosition.toString());
+
             if (bdLocation.getLocType() == BDLocation.TypeGpsLocation ||
                     bdLocation.getLocType() == BDLocation.TypeNetWorkLocation) {
                 navigateTo(bdLocation);
